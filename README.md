@@ -2,7 +2,17 @@
 
 This is the documentation for the setup and details about API Endpoints of the Book-Keep Server :
 
+## Technologies Used
+
+This project uses Node v20.9.0 along with MongoDB v7.0.2
+
 ## Dev Container
+
+If you don't have mongo or node and don't want to go through the trouble of installing them on your system, I have setup a convenient dev container which will setup an environment with Node and Mongo in a dockerized container. 
+
+All you need is the official Dev Containers Extension for VSCode and it will automatically ask you to reopen this project inside a container when you clone this repo.
+
+Or you can manually install Mongo (v >= 5) and Node (v >= 16).
 
 ## Setup
 
@@ -10,7 +20,7 @@ Assuming you have setup the dev container or have node and npm installed, you ca
 
     npm start
 
-Following env variables can be setup :
+Following env variables can be setup in a `yourfile.env`:
 
 - **_API_PORT_** : The port at which the server listens to requests. Default is 3000.
 - **_MONGO_HOST_** : Mongo Host to connect to. Default is 'localhost'.
@@ -25,6 +35,10 @@ Following env variables can be setup :
   - common
   - short
   - tiny
+
+Run the  following command before the above command if you have supplied your own `yourfile.env` file
+
+    source yourfile.env
 
 ## APIs
 
