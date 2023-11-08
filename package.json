@@ -1,0 +1,16 @@
+{
+  "name": "book-keep",
+  "version": "1.0.0",
+  "description": "REST APIs related to book keeping",
+  "main": "bin/www",
+  "scripts": {
+    "start": "npm install && node bin/www"
+  },
+  "author": "Naveen Dara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "morgan": "^1.10.0"
+  }
+}
